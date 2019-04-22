@@ -1,4 +1,4 @@
-export const repo = "https://github.com/YaphBlaster/react-crash-course";
+export const repo = "https://github.com/YaphBlaster/react-playground.git";
 
 export const scCode1 = `import React from "react";
  

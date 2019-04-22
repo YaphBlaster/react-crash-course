@@ -10,8 +10,8 @@ import {
   stateBreakdown3
 } from "../../data/CodeBreakdowns";
 
-import stateUsage from "../../assets/images/10b - state usage dt.png";
-import stateMutation from "../../assets/images/12b- state mutation dt.png";
+import stateUsage from "../../assets/images/stateUsageDT.png";
+import stateMutation from "../../assets/images/stateMutationDT.png";
 import BottomNav from "../../components/BottomNav";
 
 const index = () => {

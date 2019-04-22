@@ -55,7 +55,7 @@ const StatefulComponents = () => {
       <CodeBlock text={statefulCode2} header="App.js" />
       <InfoBlock
         header="<Person> tags"
-        content="You don't have to use the same <Person> elements as above, you can leave the ones you made in the previous section."
+        content="You don't have to use the same <Person> elements as above, you can leave the ones you made in the previous section"
       />
       <CodeBreakdown breakdowns={statefulBreakdown2} />
 
@@ -89,8 +89,8 @@ const StatefulComponents = () => {
       <CodeBlock text={statefulCode4} header="App.js" />
 
       <BottomNav
-        backRoute="stateful-components"
-        backTitle="Stateful Components"
+        backRoute="props"
+        backTitle="Props"
         forwardRoute="state"
         forwardTitle="State"
       />

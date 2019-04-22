@@ -6,14 +6,14 @@ const Home = () => {
     <div>
       <div>
         <p>
-          React is a javascript library made by Facebook to create powerful
+          React is a JavaScript library made by Facebook to create powerful
           single page applications. A key feature of React is the way it handles
           updating the application view (browser or native mobile application).
-          Most websites must refresh the window when a resource is requested
+          Older websites have to refresh the window when a resource is requested
           (ex: routing to a new link or submitting a form), but React keeps
-          track of what has changed and will re-renders the window based on the
+          track of what has changed and will re-render the window based on the
           state of the application. This is especially possible through React's
-          use of modularized components.
+          paradigm of utilizing modular components.
         </p>
 
         <p>

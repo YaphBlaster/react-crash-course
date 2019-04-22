@@ -3,17 +3,19 @@ import CodeBlock from "../../components/CodeBlock";
 import InfoBlock from "../../components/InfoBlock";
 import { repo } from "../../data/CodeSnippets";
 import Screenshot from "../../components/Screenshot";
-import npmStart from "../../assets/images/1- Yarn Start.png";
+import npmStart from "../../assets/images/yarnStart.png";
 import BottomNav from "../../components/BottomNav";
 
 const Setup = () => {
   return (
     <div>
       <h2>Setup</h2>
-      <p>Clone the Crash Course Repo</p>
+      <p>
+        Clone the Crash Course Repo and open up your project with your text
+        editor.
+      </p>
       <CodeBlock text={repo} hideLines hideBar />
 
-      <p>Open up your project with your text editor</p>
       <p>
         Open up your terminal and after navigating to the project directory, run
         the command down below. This will download all the dependencies needed
@@ -32,7 +34,7 @@ const Setup = () => {
       <CodeBlock text="npm run start" hideLines hideBar />
       <InfoBlock
         header="React Development Server"
-        content={`React's start script is located in the package.json file. The development server by default runs on "localhost:3000".`}
+        content={`React's start script is located in the package.json file. The development server by default runs on "localhost:3000"`}
       />
       <p>
         Congratulations, you've started your first react app! Your screen should

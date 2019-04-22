@@ -27,11 +27,11 @@ const Navbar = styled.div`
 `;
 
 const HomeHeader = styled(Header)`
-  margin: 15px !important;
+  padding: 15px !important;
 `;
 
 const Content = styled.div`
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   text-align: left;
@@ -46,19 +46,28 @@ class App extends Component {
     return (
       <div className="App">
         <Link to="/">
-          <HomeHeader as="h2" icon textAlign="center" color="teal">
-            <Icon name="code" circular color="teal" 
-            />
+          <HomeHeader as="h2" icon textAlign="center" inverted color="blue">
+            <Icon name="react" color="blue" inverted size="huge" />
             <Header.Content>React Crash Course</Header.Content>
           </HomeHeader>
         </Link>
 
         <Navbar>
-          <NavLink activeClassName="active-link" to="/setup">Setup</NavLink>
-          <NavLink activeClassName="active-link" to="/stateless-components">Stateless Components</NavLink>{" "}
-          <NavLink activeClassName="active-link" to="/props">Props</NavLink>
-          <NavLink activeClassName="active-link" to="/stateful-components">Stateful Components</NavLink>
-          <NavLink activeClassName="active-link" to="/state">State</NavLink>
+          <NavLink activeClassName="active-link" to="/setup">
+            Setup
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/stateless-components">
+            Stateless Components
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/props">
+            Props
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/stateful-components">
+            Stateful Components
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/state">
+            State
+          </NavLink>
         </Navbar>
         <Content>
           <Route path="/setup" component={Setup} />

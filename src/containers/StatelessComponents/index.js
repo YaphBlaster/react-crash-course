@@ -5,7 +5,7 @@ import Screenshot from "../../components/Screenshot";
 
 import { scCode1, scCode2 } from "../../data/CodeSnippets";
 import { scBreakdown1, scBreakdown2 } from "../../data/CodeBreakdowns";
-import importPerson from "../../assets/images/3 - Import Person.png";
+import importPerson from "../../assets/images/importPerson.png";
 import BottomNav from "../../components/BottomNav";
 
 const StatelessComponent = () => {
@@ -52,8 +52,8 @@ const StatelessComponent = () => {
       <Screenshot source={importPerson} />
 
       <BottomNav
-        backRoute="stateless-components"
-        backTitle="Stateless Components"
+        backRoute="setup"
+        backTitle="Setup"
         forwardRoute="props"
         forwardTitle="Props"
       />

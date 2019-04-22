@@ -4,10 +4,10 @@ import CodeBlock from "../../components/CodeBlock";
 import Screenshot from "../../components/Screenshot";
 
 import { pCode1, pCode2 } from "../../data/CodeSnippets";
-import propSetup from "../../assets/images/4 - props setup.png";
-import propUsage from "../../assets/images/5 - props usage.png";
-import propUsageDevTools from "../../assets/images/5b - props usage dt.png";
-import powerOfProps from "../../assets/images/6 - props power.png";
+import propSetup from "../../assets/images/propsSetup.png";
+import propUsage from "../../assets/images/propsUsage.png";
+import propUsageDevTools from "../../assets/images/propsUsageDT.png";
+import powerOfProps from "../../assets/images/propsPower.png";
 import BottomNav from "../../components/BottomNav";
 
 const Props = () => {
@@ -136,8 +136,8 @@ const Props = () => {
       <Screenshot source={powerOfProps} />
 
       <BottomNav
-        backRoute="props"
-        backTitle="Props"
+        backRoute="stateless-components"
+        backTitle="Stateless Components"
         forwardRoute="stateful-components"
         forwardTitle="Stateful Components"
       />
