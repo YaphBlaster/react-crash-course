@@ -1,25 +1,73 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+import { Route, Link, NavLink } from "react-router-dom";
+
+import Home from "./containers/Home";
+import Setup from "./containers/Setup";
+import StatelessComponents from "./containers/StatelessComponents";
+import Props from "./containers/Props";
+import StatefulComponents from "./containers/StatefulComponents";
+import State from "./containers/State";
+
+import { addBackToTop } from "vanilla-back-to-top";
+
+import styled from "styled-components/macro";
+import { Icon, Header } from "semantic-ui-react";
+
+const Navbar = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  a {
+    margin: 15px;
+  }
+`;
+
+const HomeHeader = styled(Header)`
+  margin: 15px !important;
+`;
+
+const Content = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  > div {
+    width: 100%;
+  }
+`;
 
 class App extends Component {
   render() {
+    addBackToTop();
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Link to="/">
+          <HomeHeader as="h2" icon textAlign="center" color="teal">
+            <Icon name="code" circular color="teal" 
+            />
+            <Header.Content>React Crash Course</Header.Content>
+          </HomeHeader>
+        </Link>
+
+        <Navbar>
+          <NavLink activeClassName="active-link" to="/setup">Setup</NavLink>
+          <NavLink activeClassName="active-link" to="/stateless-components">Stateless Components</NavLink>{" "}
+          <NavLink activeClassName="active-link" to="/props">Props</NavLink>
+          <NavLink activeClassName="active-link" to="/stateful-components">Stateful Components</NavLink>
+          <NavLink activeClassName="active-link" to="/state">State</NavLink>
+        </Navbar>
+        <Content>
+          <Route path="/setup" component={Setup} />
+          <Route path="/stateless-components" component={StatelessComponents} />
+          <Route path="/props" component={Props} />
+          <Route path="/stateful-components" component={StatefulComponents} />
+          <Route path="/state" component={State} />
+          <Route exact path="/" component={Home} />
+        </Content>
       </div>
     );
   }

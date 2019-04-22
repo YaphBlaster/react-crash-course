@@ -12,3 +12,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Terminal */
+
+#screen {
+  background-color: #33485e;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+/* Blinking Cursor */
+.cursor {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.cursor::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: white;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.55s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
