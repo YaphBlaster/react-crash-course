@@ -42,7 +42,7 @@ const Content = styled.div`
 
 class App extends Component {
   render() {
-    addBackToTop();
+    addBackToTop({ textColor: "#232323", backgroundColor: "#60dafb" });
     return (
       <div className="App">
         <Link to="/">

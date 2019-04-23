@@ -22,7 +22,7 @@ const Props = () => {
         to show off your React skills to your friend by adding their name and
         what they like to the browser? Are you going to make another component
         named "Friend.js" and copy/paste from Person.js? That seems pretty long
-        and programmers are pretty lazy person, so that's not gonna fly.
+        and programmers are pretty lazy people, so that's not gonna fly.
         Luckily, React has a solution to this called <strong>props</strong>.
       </p>
 
@@ -38,8 +38,8 @@ const Props = () => {
 
       <ul>
         <li>
-          Explicitly pass in props to the Person function (). We do this in
-          order to have access to the props object.
+          Explicitly pass in props to the Person function. We do this in order
+          to have access to the props object
         </li>
         <li>
           Replace your name with <strong>{`{props.name}`}</strong>
@@ -58,10 +58,10 @@ const Props = () => {
       <Screenshot source={propSetup} />
 
       <p>
-        Oof, looks like we <em>goof'd.</em> Now our name and what we like isn't
-        showing at all! But wait, we're not done yet! Now that we setup the
-        skeleton to use our props, we'll have to send them through wherever we
-        use a {`<Person /> `} tag, so off to App.js we go.
+        Dang, looks like we <strong>goof'd</strong>. Now our name and what we
+        like isn't showing at all! But wait, we're not done yet! Now that we
+        setup the skeleton to use our props, we'll have to send them through
+        wherever we use a {`<Person /> `} tag, so off to App.js we go.
       </p>
 
       <h3>Passing Props</h3>
@@ -113,10 +113,9 @@ const Props = () => {
       </ol>
       <p>
         That's it! If you look to the right of the window you can see a
-        <strong> Props </strong>
-        section with all the key, value information that you passed in. If you
-        want to verify that you're looking at the right screen, look at the
-        image below:
+        <strong> Props </strong> section with all the key, value information
+        that you passed in. If you want to verify that you're looking at the
+        right screen, look at the image below:
       </p>
       <Screenshot source={propUsageDevTools} />
 

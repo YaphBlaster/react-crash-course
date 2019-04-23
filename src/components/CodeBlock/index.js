@@ -3,7 +3,13 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { xonokai as stylePrism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import styled from "styled-components/macro";
 
-const StyledHightlighter = styled(SyntaxHighlighter)``;
+const StyledHightlighter = styled(SyntaxHighlighter)`
+  white-space: pre !important;
+
+  code:nth-child(2) {
+    white-space: pre !important;
+  }
+`;
 
 const TerminalWindow = styled.div`
   border-radius: 25px;

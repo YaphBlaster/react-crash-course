@@ -12,6 +12,7 @@ import {
 
 import stateUsage from "../../assets/images/stateUsageDT.png";
 import stateMutation from "../../assets/images/stateMutationDT.png";
+import basicOnClick from "../../assets/images/basicOnClickFunction.png";
 import BottomNav from "../../components/BottomNav";
 
 const index = () => {
@@ -20,15 +21,14 @@ const index = () => {
       <h2>State</h2>
       <h3>Introduction</h3>
       <p>
-        Remember when I said we'd talk about state in a later chapter? Well, no
-        spoilers but this is the chapter where we're gonna talk about state. In
-        React, state is an object that we can store key, pair values. This
-        information can be anything, booleans, integers, floats, strings,
-        arrays, other objects, and many other data structures. This sounds very
-        similar to props, but there is a key difference; with state we can
-        change the value based on user input (button clicks, mouse over,
-        keyboard input). But instead of just talking about state, let's dive
-        into the code and use it.
+        Remember when I said we'd talk about state in a later chapter? Well this
+        is that chapter that we're going to talk about state. In React, state is
+        an object where we can store key, pair values. This information can be
+        anything, booleans, integers, floats, strings, arrays, other objects,
+        and many other data structures. This sounds very similar to props, but
+        there is a key difference; with state we can change the value based on
+        user input (button clicks, mouse over, keyboard input). But instead of
+        just talking about state, let's dive into the code and use it.
       </p>
 
       <p>In the Counter.js file, perform the following.</p>
@@ -70,10 +70,18 @@ const index = () => {
       <CodeBlock text={stateCode2} header="Counter.js" />
       <CodeBreakdown breakdowns={stateBreakdown2} />
 
+      <p>
+        Once you save, you can navigate to the console (F12 > Console Tab). When
+        you click on the button, it will generate a new log. Compare your
+        results with the image below:
+      </p>
+
+      <Screenshot source={basicOnClick} />
+
       <h3>State Manipulation</h3>
       <p>
         In this last section, we're going to see how to manipulate state and how
-        react will instantly re-render the window (without refreshing!).
+        React will instantly re-render the window (without refreshing!).
       </p>
       <p>In Counter.js, add the following lines:</p>
       <CodeBlock text={stateCode3} header="Counter.js" />

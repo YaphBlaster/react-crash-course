@@ -28,8 +28,8 @@ const StatefulComponents = () => {
         <a href="https://reactjs.org/docs/react-component.html#the-component-lifecycle">
           lifecycle
         </a>
-        . State is used to dynamically change a components properties and allows
-        us run logic against those changes.
+        . State is used to dynamically change a component's stored data and
+        allows us run logic against those changes.
       </p>
 
       <h3>Creating A Stateful Component</h3>
@@ -48,7 +48,7 @@ const StatefulComponents = () => {
       <p>Navigate to the App.js file and perform the following steps:</p>
       <p>Import your Counter component</p>
       <ul>
-        <li>Import your Counter component </li>
+        <li>Import your Counter component</li>
         <li>Render out the Counter component inside the {`<header> `}tag</li>
       </ul>
       <p>Your code should look similar to this:</p>
@@ -75,8 +75,8 @@ const StatefulComponents = () => {
           the props attribute from the Component object.
         </li>
         <li>
-          Instead of <strong>props.name</strong>, we use{" "}
-          <strong>this.props.name</strong>.
+          Instead of <strong>props.PROPERTY_NAME</strong>, we use{" "}
+          <strong>this.props.PROPERTY_NAME</strong>.
         </li>
       </ul>
       <p>

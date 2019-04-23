@@ -8,18 +8,18 @@ const Home = () => {
         <p>
           React is a JavaScript library made by Facebook to create powerful
           single page applications. A key feature of React is the way it handles
-          updating the application view (browser or native mobile application).
-          Older websites have to refresh the window when a resource is requested
-          (ex: routing to a new link or submitting a form), but React keeps
-          track of what has changed and will re-render the window based on the
-          state of the application. This is especially possible through React's
-          paradigm of utilizing modular components.
+          updating the application's view (browser or native mobile
+          application). Older websites have to refresh the window when a
+          resource is requested (ex: routing to a new link or submitting a
+          form), but React keeps track of what has changed and will re-render
+          the window based on the state of the application. This is especially
+          possible through React's paradigm of modular components.
         </p>
 
         <p>
           During this crash course, we will be going through React fundamentals.
           Before that though, there are a couple of prerequisites necessary to
-          install first:
+          install:
         </p>
         <ul>
           <li>

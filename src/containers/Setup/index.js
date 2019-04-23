@@ -11,7 +11,7 @@ const Setup = () => {
     <div>
       <h2>Setup</h2>
       <p>
-        Clone the Crash Course Repo and open up your project with your text
+        Clone the Crash Course Repo and open up the project with your text
         editor.
       </p>
       <CodeBlock text={repo} hideLines hideBar />
