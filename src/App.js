@@ -45,12 +45,12 @@ class App extends Component {
     addBackToTop({ textColor: "#232323", backgroundColor: "#60dafb" });
     return (
       <div className="App">
-        <Link to="/">
-          <HomeHeader as="h2" icon textAlign="center" inverted color="blue">
+        <HomeHeader as="h2" icon textAlign="center" inverted color="blue">
+          <Link to="/">
             <Icon name="react" color="blue" inverted size="huge" />
             <Header.Content>React Crash Course</Header.Content>
-          </HomeHeader>
-        </Link>
+          </Link>
+        </HomeHeader>
 
         <Navbar>
           <NavLink activeClassName="active-link" to="/setup">
