@@ -28,6 +28,8 @@ const Navbar = styled.div`
 
 const HomeHeader = styled(Header)`
   padding: 15px !important;
+  max-width: 270px;
+  margin: 0 auto;
 `;
 
 const Content = styled.div`
